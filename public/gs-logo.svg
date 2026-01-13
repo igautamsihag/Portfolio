@@ -1,0 +1,21 @@
+<svg width="120" height="120" viewBox="0 0 120 120"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Rounded square -->
+  <rect x="6" y="6" width="108" height="108"
+        rx="18" ry="18"
+        fill="none"
+        stroke="#1f2937"
+        stroke-width="3"/>
+
+  <!-- GS Text -->
+  <text x="60" y="76"
+        text-anchor="middle"
+        font-family="Inter, Poppins, Arial, sans-serif"
+        font-size="52"
+        font-weight="600"
+        letter-spacing="2"
+        fill="#1f2937">
+    GS
+  </text>
+</svg>
