@@ -22,11 +22,11 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                     </Link>
                     <div className="hidden sm:flex">
                         <ul className="hidden sm:flex gap-10">
-                            <li className="uppercase hover:border-b text-xl">Home</li>
-                            <li className="uppercase hover:border-b text-xl">About</li>
-                            <li className="uppercase hover:border-b text-xl">Projects</li>
-                            <li className="uppercase hover:border-b text-xl">Skills</li>
-                            <li className="uppercase hover:border-b text-xl">Contact</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer">Home</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer">About</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer">Projects</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer">Skills</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer">Contact</li>
                         </ul>
                     </div>
                     <div onClick={handleMenu} className="sm:hidden cursor-pointer pl-24">
@@ -56,27 +56,27 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
 
                 <div className="flex-col py-4">
                     <ul>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer">
+                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
                             Home
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer">
+                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
                             About
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer">
+                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
                             Projects
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer">
+                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
                             Skills
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer">
+                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
                             Contact
                         </li>
                     </ul>
                 </div>
                 <div className="flex flex-row justify-around pt-10 items-center">
-                    <AiOutlineGithub size={30} className="cursor-pinter" />
-                    <AiOutlineLinkedin size={30} className="cursor-pinter" />
-                    <AiOutlineMail size={30} className="cursor-pinter" />
+                    <AiOutlineGithub size={30} className="cursor-pointer" />
+                    <AiOutlineLinkedin size={30} className="cursor-pointer" />
+                    <AiOutlineMail size={30} className="cursor-pointer" />
                 </div>
                 </div>
 
