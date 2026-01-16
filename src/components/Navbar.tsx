@@ -15,7 +15,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
   };
 
     return (
-            <nav className="fixed w-full h-24 shadow-xl bg-white">
+            <nav className="fixed w-full h-24 shadow-xl bg-white z-50">
                 <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
                 <Link href="/">
                     <Image src={logo} alt="monogram" className="w-10 h-10 sm:w-13 sm:h-13 md:w-16 md:h-16" />
