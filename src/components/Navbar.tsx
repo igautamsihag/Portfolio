@@ -56,8 +56,8 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
 
                 <div className="flex-col py-4">
                     <ul>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            <Link href="/">Home</Link>
+                        <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <Link onClick={()=> setMenuOpen(false)} href="/">Home</Link>
                         </li>
                         <li className="py-4 cursor-pointer uppercase hover:border-b">
                             <Link onClick={()=> setMenuOpen(false)} href="/about">About</Link>
