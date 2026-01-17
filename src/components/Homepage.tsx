@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import profilePhoto from "../../public/profilePhoto.png";
 import { Dancing_Script } from "next/font/google";
+import Link from "next/link";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -20,14 +21,18 @@ const Homepage = () => {
           A Software Engineer
         </h1>
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-10 justify-center sm:justify-start">
-          <button className="px-8 py-3 bg-black text-white rounded-lg shadow-lg 
+          <Link href="/contact">
+          <button className=" w-full sm:w-auto px-8 py-3 bg-black text-white rounded-lg shadow-lg 
                      hover:bg-gray-800 hover:scale-105 transition transform duration-300 ease-in-out">
             Contact Me
           </button>
-          <button className="px-8 py-3 bg-white text-black border-2 border-black rounded-lg shadow-lg 
+          </Link>
+          <Link href="/projects">
+          <button className="w-full sm:w-auto px-8 py-3 bg-white text-black border-2 border-black rounded-lg shadow-lg 
                      hover:bg-gray-100 hover:scale-105 transition transform duration-300 ease-in-out">
             Portfolio
           </button>
+          </Link>
         </div>
       </div>
 

@@ -13,9 +13,15 @@ const Footer = () => {
         Seeking opportunities to contribute to innovative projects.
       </p>
       <div className="flex justify-center gap-6 mb-8">
-        <AiOutlineGithub size={30} className="cursor-pointer" />
-        <AiOutlineLinkedin size={30} className="cursor-pointer" />
-        <AiOutlineMail size={30} className="cursor-pointer" />
+        <a href="https://github.com/igautamsihag" target="_blank" rel="noopener noreferrer">
+          <AiOutlineGithub size={30} className="cursor-pointer" />
+        </a>
+        <a href="https://linkedin.com/in/gautamsihag30" target="_blank" rel="noopener noreferrer">
+          <AiOutlineLinkedin size={30} className="cursor-pointer" />
+        </a>
+        <a href="mailto:gautamsihag30@gmail.com">
+          <AiOutlineMail size={30} className="cursor-pointer" />
+        </a>
       </div>
       <div className="relative w-full bg-white h-6">
     <p className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-black text-sm">

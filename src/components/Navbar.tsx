@@ -22,11 +22,11 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                     </Link>
                     <div className="hidden sm:flex">
                         <ul className="hidden sm:flex gap-10">
-                            <li className="uppercase hover:border-b text-xl cursor-pointer">Home</li>
-                            <li className="uppercase hover:border-b text-xl cursor-pointer">About</li>
-                            <li className="uppercase hover:border-b text-xl cursor-pointer">Projects</li>
-                            <li className="uppercase hover:border-b text-xl cursor-pointer">Skills</li>
-                            <li className="uppercase hover:border-b text-xl cursor-pointer">Contact</li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/">Home</Link></li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/about">About</Link></li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/projects">Projects</Link></li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/skills">Skills</Link></li>
+                            <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/contact">Contact</Link></li>
                         </ul>
                     </div>
                     <div onClick={handleMenu} className="sm:hidden cursor-pointer pl-24">
@@ -35,8 +35,8 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                 </div>
                 {menuOpen && (
                     <div
-                        onClick={handleMenu}
                         className="fixed inset-0 bg-black/50 z-30 sm:hidden"
+                        onClick={() => setMenuOpen(false)}
                         />
                     )}
                 <div className={
@@ -57,26 +57,32 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                 <div className="flex-col py-4">
                     <ul>
                         <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            Home
+                            <Link href="/">Home</Link>
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            About
+                        <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <Link onClick={()=> setMenuOpen(false)} href="/about">About</Link>
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            Projects
+                        <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <Link onClick={()=> setMenuOpen(false)} href="/projects">Projects</Link>
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            Skills
+                        <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <Link onClick={()=> setMenuOpen(false)} href="/skills">Skills</Link>
                         </li>
-                        <li onClick={()=> setMenuOpen(false)} className="py-4 cursor-pointer uppercase hover:border-b">
-                            Contact
+                        <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <Link onClick={()=> setMenuOpen(false)} href="/contact">Contact</Link>
                         </li>
                     </ul>
                 </div>
                 <div className="flex flex-row justify-around pt-10 items-center">
+                    <a href="https://github.com/igautamsihag" target="_blank" rel="noopener noreferrer">
                     <AiOutlineGithub size={30} className="cursor-pointer" />
+                    </a>
+                    <a href="https://linkedin.com/in/gautamsihag30" target="_blank" rel="noopener noreferrer">
                     <AiOutlineLinkedin size={30} className="cursor-pointer" />
+                    </a>
+                    <a href="mailto:gautamsihag30@gmail.com">
                     <AiOutlineMail size={30} className="cursor-pointer" />
+                    </a>
                 </div>
                 </div>
 
