@@ -1,11 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
+import Navbar from "../components/Navbar";
+import Portfolio from "../components/Portfolio";
+import Footer from "../components/Footer";
 
-export default function Projects() {
+export default function About() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-800">
-        Coming Soon...
-      </h1>
+    <div>
+    <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+                {!menuOpen && (
+            <>
+                
+                <Portfolio />
+                <Footer />
+            </>
+            )}
     </div>
   );
 }
