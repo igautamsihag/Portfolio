@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white">
             <h2 className="text-2xl sm:text-3xl font-semibold text-center py-6">
-                A stupid engineer</h2>
+                A software engineer</h2>
             <p className="text-center text-xs sm:text-base mb-1">
         Graduate Software Engineer with full-stack development skills.
       </p>
