@@ -26,7 +26,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
                             <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/about">About</Link></li>
                             <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/projects">Projects</Link></li>
                             <li className="uppercase hover:border-b text-xl cursor-pointer"><Link href="/skills">Skills</Link></li>
-                            <li className="py-4 cursor-pointer uppercase hover:border-b">
+                            <li className="text-xl cursor-pointer uppercase hover:border-b">
                                 <a href="https://huggingface.co/spaces/igautamsihag/ai-chatbot" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Contact</a>
                             </li>
                         </ul>
