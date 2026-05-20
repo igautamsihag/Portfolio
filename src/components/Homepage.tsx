@@ -11,7 +11,7 @@ const dancing = Dancing_Script({
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col-reverse sm:flex-row justify-center items-center min-h-[calc(100vh-6rem)] bg-gray-50 sm:space-x-12 md:space-x-16 lg:space-x-24 xl:space-x-32 space-y-4 sm:space-y-0 px-4 mb-24">
+    <div className="flex flex-col-reverse sm:flex-row justify-center items-center min-h-screen dot-pattern sm:space-x-12 md:space-x-16 lg:space-x-24 xl:space-x-32 space-y-4 sm:space-y-0 px-4">
       
       <div className="text-center sm:text-left space-y-2 sm:space-y-4 mt-8 sm:mt-24">
         <h1 className={`${dancing.className} font-bold animate-drop-bounce text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5rem] tracking-wider drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-700`}>

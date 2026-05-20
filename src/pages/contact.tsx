@@ -10,7 +10,7 @@ export default function Contact() {
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           {!menuOpen && (
         <>
-          <div className="flex items-center justify-center min-h-screen bg-gray-50">
+          <div className="flex items-center justify-center min-h-screen dot-pattern">
           <Form />
           </div>
         <Footer />

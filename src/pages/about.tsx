@@ -22,8 +22,10 @@ export default function About() {
                   <div className="snap-start">
                     <Volunteer />
                   </div>
+                  <div className="snap-start">
+                    <Footer />
+                  </div>
                 </div>
-                <Footer />
             </>
             )}
     </div>
